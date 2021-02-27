@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer\AppsManagers;
+namespace Soketi\EchoServer\AppsManagers;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

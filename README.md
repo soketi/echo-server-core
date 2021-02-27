@@ -1,17 +1,17 @@
 Echo Server Core
 ================
 
-![CI](https://github.com/renoki-co/echo-server-core/workflows/CI/badge.svg?branch=master)
-[![codecov](https://codecov.io/gh/renoki-co/echo-server-core/branch/master/graph/badge.svg)](https://codecov.io/gh/renoki-co/echo-server-core/branch/master)
+![CI](https://github.com/soketi/echo-server-core/workflows/CI/badge.svg?branch=master)
+[![codecov](https://codecov.io/gh/soketi/echo-server-core/branch/master/graph/badge.svg)](https://codecov.io/gh/soketi/echo-server-core/branch/master)
 [![StyleCI](https://github.styleci.io/repos/327936460/shield?branch=master)](https://github.styleci.io/repos/327936460)
-[![Latest Stable Version](https://poser.pugx.org/renoki-co/echo-server-core/v/stable)](https://packagist.org/packages/renoki-co/echo-server-core)
-[![Total Downloads](https://poser.pugx.org/renoki-co/echo-server-core/downloads)](https://packagist.org/packages/renoki-co/echo-server-core)
-[![Monthly Downloads](https://poser.pugx.org/renoki-co/echo-server-core/d/monthly)](https://packagist.org/packages/renoki-co/echo-server-core)
-[![License](https://poser.pugx.org/renoki-co/echo-server-core/license)](https://packagist.org/packages/renoki-co/echo-server-core)
+[![Latest Stable Version](https://poser.pugx.org/soketi/echo-server-core/v/stable)](https://packagist.org/packages/soketi/echo-server-core)
+[![Total Downloads](https://poser.pugx.org/soketi/echo-server-core/downloads)](https://packagist.org/packages/soketi/echo-server-core)
+[![Monthly Downloads](https://poser.pugx.org/soketi/echo-server-core/d/monthly)](https://packagist.org/packages/soketi/echo-server-core)
+[![License](https://poser.pugx.org/soketi/echo-server-core/license)](https://packagist.org/packages/soketi/echo-server-core)
 
 Echo Server Core is a Laravel utility package used for Socket.IO-based Echo Server application.
 
-This driver is meant to be used with [renoki-co/echo-server](https://github.com/renoki-co/echo-server), a fork of Laravel Echo Server.
+This package is meant to be used with [soketi/echo-server](https://github.com/soketi/echo-server), a fork of Laravel Echo Server, to give a better robustness to the app managers.
 
 ## 🤝 Supporting
 
@@ -26,19 +26,19 @@ If you are using your application in your day-to-day job, on presentation demos,
 You can install the package via composer:
 
 ```bash
-composer require renoki-co/echo-server-core
+composer require soketi/echo-server-core
 ```
 
 Publish the config:
 
 ```bash
-$ php artisan vendor:publish --provider="RenokiCo\EchoServer\EchoServerServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="Soketi\EchoServer\EchoServerServiceProvider" --tag="config"
 ```
 
 Publish the migrations:
 
 ```bash
-$ php artisan vendor:publish --provider="RenokiCo\EchoServer\EchoServerServiceProvider" --tag="migrations"
+$ php artisan vendor:publish --provider="Soketi\EchoServer\EchoServerServiceProvider" --tag="migrations"
 ```
 
 ## 🙌 Usage

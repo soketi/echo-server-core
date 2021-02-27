@@ -1,9 +1,9 @@
 {
-    "name": "renoki-co/echo-server-core",
+    "name": "soketi/echo-server-core",
     "description": "Echo Server Core is a Laravel utility package used for Socket.IO-based Echo Server application.",
     "keywords": ["laravel", "php", "echo", "server", "socket", "socket.io", "websockets", "broadcast", "broadcasting"],
     "license": "Apache-2.0",
-    "homepage": "https://github.com/renoki-co/echo-server-core",
+    "homepage": "https://github.com/soketi/echo-server-core",
     "authors": [
         {
             "name": "Alex Renoki",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RenokiCo\\EchoServer\\": "src/"
+            "Soketi\\EchoServer\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RenokiCo\\EchoServer\\Test\\": "tests"
+            "Soketi\\EchoServer\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RenokiCo\\EchoServer\\EchoServerServiceProvider"
+                "Soketi\\EchoServer\\EchoServerServiceProvider"
             ]
         }
     }

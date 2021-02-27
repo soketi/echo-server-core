@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer\Test;
+namespace Soketi\EchoServer\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -28,7 +28,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \RenokiCo\EchoServer\EchoServerServiceProvider::class,
+            \Soketi\EchoServer\EchoServerServiceProvider::class,
         ];
     }
 

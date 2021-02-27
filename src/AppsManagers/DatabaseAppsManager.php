@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer\AppsManagers;
+namespace Soketi\EchoServer\AppsManagers;
 
 class DatabaseAppsManager extends ArrayAppsManager
 {
@@ -8,7 +8,7 @@ class DatabaseAppsManager extends ArrayAppsManager
      * Find an application by ID.
      *
      * @param  string  $appId
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findById(string $appId)
     {
@@ -27,7 +27,7 @@ class DatabaseAppsManager extends ArrayAppsManager
      * Find an application by ID.
      *
      * @param  string  $appKey
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findByKey(string $appKey)
     {
@@ -46,7 +46,7 @@ class DatabaseAppsManager extends ArrayAppsManager
      * Get an App instance from mode.
      *
      * @param  \Illuminate\Database\Eloquent\Model  $app
-     * @return \RenokiCo\EchoServer\AppsManagers\App
+     * @return \Soketi\EchoServer\AppsManagers\App
      */
     protected function toApp($app)
     {

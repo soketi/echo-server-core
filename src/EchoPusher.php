@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer;
+namespace Soketi\EchoServer;
 
 use Pusher\Pusher;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace RenokiCo\EchoServer\AppsManagers;
+namespace Soketi\EchoServer\AppsManagers;
 
-use RenokiCo\EchoServer\Contracts\AppsManager;
+use Soketi\EchoServer\Contracts\AppsManager;
 
 class ArrayAppsManager implements AppsManager
 {
@@ -10,7 +10,7 @@ class ArrayAppsManager implements AppsManager
      * Find an application by ID.
      *
      * @param  string  $appId
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findById(string $appId)
     {
@@ -29,7 +29,7 @@ class ArrayAppsManager implements AppsManager
      * Find an application by key.
      *
      * @param  string  $appKey
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findByKey(string $appKey)
     {
@@ -48,7 +48,7 @@ class ArrayAppsManager implements AppsManager
      * Get an App instance from array.
      *
      * @param  array  $app
-     * @return \RenokiCo\EchoServer\AppsManagers\App
+     * @return \Soketi\EchoServer\AppsManagers\App
      */
     protected function toApp(array $app)
     {

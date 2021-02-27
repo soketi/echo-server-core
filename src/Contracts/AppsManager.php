@@ -1,6 +1,6 @@
 <?php
 
-namespace Renokico\EchoServer\Contracts;
+namespace Soketi\EchoServer\Contracts;
 
 interface AppsManager
 {
@@ -8,7 +8,7 @@ interface AppsManager
      * Find an application by ID.
      *
      * @param  string  $appId
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findById(string $appId);
 
@@ -16,7 +16,7 @@ interface AppsManager
      * Find an application by ID.
      *
      * @param  string  $appKey
-     * @return null|\RenokiCo\EchoServer\AppsManagers\App
+     * @return null|\Soketi\EchoServer\AppsManagers\App
      */
     public function findByKey(string $appKey);
 }

@@ -28,7 +28,7 @@ return [
 
         'array' => [
 
-            'manager' => \RenokiCo\EchoServer\AppsManagers\ArrayAppsManager::class,
+            'manager' => \Soketi\EchoServer\AppsManagers\ArrayAppsManager::class,
 
             'apps' => [
                 [
@@ -56,9 +56,9 @@ return [
 
         'database' => [
 
-            'manager' => \RenokiCo\EchoServer\AppsManagers\DatabaseAppsManager::class,
+            'manager' => \Soketi\EchoServer\AppsManagers\DatabaseAppsManager::class,
 
-            'model' => \RenokiCo\EchoServer\Models\EchoApp::class,
+            'model' => \Soketi\EchoServer\Models\EchoApp::class,
 
         ],
 

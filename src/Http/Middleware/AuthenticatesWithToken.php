@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer\Http\Middleware;
+namespace Soketi\EchoServer\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

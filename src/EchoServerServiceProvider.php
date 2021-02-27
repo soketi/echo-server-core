@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer;
+namespace Soketi\EchoServer;
 
 use Illuminate\Broadcasting\BroadcastManager;
 use Illuminate\Support\Facades\Route;
@@ -107,7 +107,7 @@ class EchoServerServiceProvider extends ServiceProvider
             'middleware' => config('echo-server.api.middleware'),
             'prefix' => config('echo-server.api.prefix'),
         ], function () {
-            Route::get('/app', [\RenokiCo\EchoServer\Http\Controllers\AppsController::class, 'show'])->name('app.show');
+            Route::get('/app', [\Soketi\EchoServer\Http\Controllers\AppsController::class, 'show'])->name('app.show');
         });
     }
 

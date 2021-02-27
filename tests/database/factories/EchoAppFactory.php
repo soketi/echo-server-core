@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$factory->define(\RenokiCo\EchoServer\Models\EchoApp::class, function () {
+$factory->define(\Soketi\EchoServer\Models\EchoApp::class, function () {
     return [
         'key' => Str::random(32),
         'secret' => Str::random(32),

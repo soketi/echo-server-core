@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\RenokiCo\Test\Models;
+namespace Soketi\Soketi\Test\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -1,15 +1,15 @@
 <?php
 
-namespace RenokiCo\EchoServer\Http\Controllers;
+namespace Soketi\EchoServer\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use RenokiCo\EchoServer\AppsManagers\App;
-use RenokiCo\EchoServer\Contracts\AppsManager;
-use RenokiCo\EchoServer\Http\Middleware\AuthenticatesWithToken;
+use Soketi\EchoServer\AppsManagers\App;
+use Soketi\EchoServer\Contracts\AppsManager;
+use Soketi\EchoServer\Http\Middleware\AuthenticatesWithToken;
 
 class AppsController extends Controller
 {
@@ -28,7 +28,7 @@ class AppsController extends Controller
     /**
      * Get an app by ID.
      *
-     * @param  \RenokiCo\EchoServer\Contracts\AppsManager  $appsManager
+     * @param  \Soketi\EchoServer\Contracts\AppsManager  $appsManager
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */

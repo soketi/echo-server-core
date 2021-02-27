@@ -1,6 +1,6 @@
 <?php
 
-namespace RenokiCo\EchoServer\Broadcasters;
+namespace Soketi\EchoServer\Broadcasters;
 
 use Illuminate\Broadcasting\Broadcasters\PusherBroadcaster;
 

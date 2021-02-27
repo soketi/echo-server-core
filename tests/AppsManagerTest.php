@@ -1,8 +1,8 @@
 <?php
 
-namespace RenokiCo\EchoServer\Test;
+namespace Soketi\EchoServer\Test;
 
-use RenokiCo\EchoServer\Models\EchoApp;
+use Soketi\EchoServer\Models\EchoApp;
 
 class AppsManagerTest extends TestCase
 {
