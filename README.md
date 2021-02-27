@@ -3,7 +3,7 @@ Echo Server Core
 
 ![CI](https://github.com/soketi/echo-server-core/workflows/CI/badge.svg?branch=master)
 [![codecov](https://codecov.io/gh/soketi/echo-server-core/branch/master/graph/badge.svg)](https://codecov.io/gh/soketi/echo-server-core/branch/master)
-[![StyleCI](https://github.styleci.io/repos/327936460/shield?branch=master)](https://github.styleci.io/repos/327936460)
+[![StyleCI](https://github.styleci.io/repos/342836218/shield?branch=master)](https://github.styleci.io/repos/342836218)
 [![Latest Stable Version](https://poser.pugx.org/soketi/echo-server-core/v/stable)](https://packagist.org/packages/soketi/echo-server-core)
 [![Total Downloads](https://poser.pugx.org/soketi/echo-server-core/downloads)](https://packagist.org/packages/soketi/echo-server-core)
 [![Monthly Downloads](https://poser.pugx.org/soketi/echo-server-core/d/monthly)](https://packagist.org/packages/soketi/echo-server-core)
