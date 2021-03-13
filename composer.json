@@ -17,8 +17,7 @@
         "illuminate/database": "^7.30|^8.23",
         "illuminate/routing": "^7.30|^8.23",
         "illuminate/support": "^7.30|^8.23",
-        "pusher/pusher-php-server": "^4.0",
-        "renoki-co/laravel-useful-casts": "^1.0"
+        "pusher/pusher-php-server": "^4.0"
     },
     "autoload": {
         "psr-4": {

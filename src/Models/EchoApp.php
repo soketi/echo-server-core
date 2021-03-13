@@ -3,7 +3,6 @@
 namespace Soketi\EchoServer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use RenokiCo\UsefulCasts\Casts\Arrayed;
 
 class EchoApp extends Model
 {
