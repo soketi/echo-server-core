@@ -16,7 +16,6 @@ class AppsManagerTest extends TestCase
                     'key' => 'echo-app-key',
                     'secret' => 'echo-app-secret',
                     'maxConnections' => -1,
-                    'allowedOrigins' => ['*'],
                     'enableStats' => false,
                 ],
             ]);
@@ -29,7 +28,6 @@ class AppsManagerTest extends TestCase
                     'key' => 'echo-app-key',
                     'secret' => 'echo-app-secret',
                     'maxConnections' => -1,
-                    'allowedOrigins' => ['*'],
                     'enableStats' => false,
                 ],
             ]);
@@ -55,7 +53,6 @@ class AppsManagerTest extends TestCase
             'key' => 'echo-app-key',
             'secret' => 'echo-app-secret',
             'max_connections' => 100,
-            'allowed_origins' => ['*.test.com'],
             'enable_stats' => true,
         ]);
 
@@ -67,7 +64,6 @@ class AppsManagerTest extends TestCase
                     'key' => $app->key,
                     'secret' => $app->secret,
                     'maxConnections' => $app->max_connections,
-                    'allowedOrigins' => $app->allowed_origins,
                     'enableStats' => $app->enable_stats,
                 ],
             ]);
@@ -80,7 +76,6 @@ class AppsManagerTest extends TestCase
                     'key' => $app->key,
                     'secret' => $app->secret,
                     'maxConnections' => $app->max_connections,
-                    'allowedOrigins' => $app->allowed_origins,
                     'enableStats' => $app->enable_stats,
                 ],
             ]);

@@ -57,7 +57,6 @@ class ArrayAppsManager implements AppsManager
             $app['key'],
             $app['secret'],
             $app['maxConnections'] ?? -1,
-            $app['allowedOrigins'] ?? ['*'],
             $app['enableStats'] ?? false
         );
     }

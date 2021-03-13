@@ -36,13 +36,6 @@ class App implements Arrayable, Jsonable
     protected $maxConnections;
 
     /**
-     * The patterns for allowed origins.
-     *
-     * @var array
-     */
-    protected $allowedOrigins;
-
-    /**
      * Enabling the stats collection.
      *
      * @var array
@@ -56,7 +49,6 @@ class App implements Arrayable, Jsonable
      * @param  string  $key
      * @param  string  $secret
      * @param  int  $maxConnections
-     * @param  array  $allowedOrigins
      * @param  bool  $enableStats
      * @return void
      */
@@ -65,14 +57,12 @@ class App implements Arrayable, Jsonable
         string $key,
         string $secret,
         int $maxConnections,
-        array $allowedOrigins,
         bool $enableStats
     ) {
         $this->id = $id;
         $this->key = $key;
         $this->secret = $secret;
         $this->maxConnections = $maxConnections;
-        $this->allowedOrigins = $allowedOrigins;
         $this->enableStats = $enableStats;
     }
 
@@ -88,7 +78,6 @@ class App implements Arrayable, Jsonable
             'key' => $this->key,
             'secret' => $this->secret,
             'maxConnections' => $this->maxConnections,
-            'allowedOrigins' => $this->allowedOrigins,
             'enableStats' => $this->enableStats,
         ];
     }

@@ -36,7 +36,6 @@ return [
                     'key' => env('ECHO_SERVER_APP_DEFAULT_KEY', 'echo-app-key'),
                     'secret' => env('ECHO_SERVER_APP_DEFAULT_SECRET', 'echo-app-secret'),
                     'maxConnections' => env('ECHO_SERVER_APP_DEFAULT_MAX_CONNS', -1),
-                    'allowedOrigins' => env('ECHO_SERVER_APP_DEFAULT_ALLOWED_ORIGINS', ['*']),
                     'enableStats' => env('ECHO_SERVER_APP_DEFAULT_ENABLE_STATS', false),
                 ],
             ],

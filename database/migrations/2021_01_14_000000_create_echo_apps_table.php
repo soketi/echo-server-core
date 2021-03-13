@@ -18,7 +18,6 @@ class CreateEchoAppsTable extends Migration
             $table->string('key')->index();
             $table->string('secret');
             $table->unsignedInteger('max_connections')->nullable();
-            $table->json('allowed_origins')->nullable();
             $table->boolean('enable_stats')->default(false);
             $table->timestamps();
         });
