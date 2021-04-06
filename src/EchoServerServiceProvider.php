@@ -120,7 +120,7 @@ class EchoServerServiceProvider extends ServiceProvider
     {
         $this->app->bind(Contracts\AppsManager::class, function ($app) {
             $config = $app['config']['echo-server'];
-            
+
             $driver = $config['app-manager']['driver'];
             $class = $config['app-manager'][$driver]['manager'];
 
