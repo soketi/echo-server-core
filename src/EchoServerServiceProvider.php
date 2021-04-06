@@ -118,9 +118,11 @@ class EchoServerServiceProvider extends ServiceProvider
      */
     protected function registerAppsManager(): void
     {
-        $this->app->bind(Contracts\AppsManager::class, function () {
-            $driver = config('echo-server.app-manager.driver');
-            $class = config("echo-server.app-manager.{$driver}.manager");
+        $this->app->bind(Contracts\AppsManager::class, function ($app) {
+            $config = $app['config']['echo-server'];
+            
+            $driver = $config['app-manager']['driver'];
+            $class = $config['app-manager'][$driver]['manager'];
 
             return new $class;
         });
