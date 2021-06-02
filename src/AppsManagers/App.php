@@ -70,7 +70,6 @@ class App implements Arrayable, Jsonable
      */
     protected $maxReadRequestsPerMinute;
 
-
     /**
      * Initialize the app.
      *
