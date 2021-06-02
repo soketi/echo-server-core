@@ -17,6 +17,10 @@ class AppsManagerTest extends TestCase
                     'secret' => 'echo-app-secret',
                     'maxConnections' => -1,
                     'enableStats' => false,
+                    'enableClientMessages' => true,
+                    'maxBackendEventsPerMinute' => -1,
+                    'maxClientEventsPerMinute' => -1,
+                    'maxReadRequestsPerMinute' => -1,
                 ],
             ]);
 
@@ -29,6 +33,10 @@ class AppsManagerTest extends TestCase
                     'secret' => 'echo-app-secret',
                     'maxConnections' => -1,
                     'enableStats' => false,
+                    'enableClientMessages' => true,
+                    'maxBackendEventsPerMinute' => -1,
+                    'maxClientEventsPerMinute' => -1,
+                    'maxReadRequestsPerMinute' => -1,
                 ],
             ]);
 
