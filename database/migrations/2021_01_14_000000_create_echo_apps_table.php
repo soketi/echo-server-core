@@ -21,7 +21,6 @@ class CreateEchoAppsTable extends Migration
             $table->boolean('enable_stats')->default(false);
             $table->boolean('enable_client_messages')->default(true);
             $table->unsignedInteger('max_backend_events_per_min')->nullable();
-            $table->unsignedInteger('max_backend_events_per_min')->nullable();
             $table->unsignedInteger('max_client_events_per_min')->nullable();
             $table->unsignedInteger('max_read_req_per_min')->nullable();
             $table->timestamps();
