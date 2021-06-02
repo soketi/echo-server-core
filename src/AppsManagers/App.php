@@ -29,7 +29,7 @@ class App implements Arrayable, Jsonable
     protected $secret;
 
     /**
-     * The maximum amount of connexions.
+     * The maximum amount of connections.
      *
      * @var int
      */
@@ -38,9 +38,38 @@ class App implements Arrayable, Jsonable
     /**
      * Enabling the stats collection.
      *
-     * @var array
+     * @var bool
      */
     protected $enableStats;
+
+    /**
+     * Enabling the client messages.
+     *
+     * @var bool
+     */
+    protected $enableClientMessages;
+
+    /**
+     * The maximum amount of provisioned backend events per minute.
+     *
+     * @var int
+     */
+    protected $maxBackendEventsPerMinute;
+
+    /**
+     * The maximum amount of provisioned client events per minute.
+     *
+     * @var int
+     */
+    protected $maxClientEventsPerMinute;
+
+    /**
+     * The maximum amount of provisioned read requests per minute.
+     *
+     * @var int
+     */
+    protected $maxReadRequestsPerMinute;
+
 
     /**
      * Initialize the app.
@@ -50,6 +79,10 @@ class App implements Arrayable, Jsonable
      * @param  string  $secret
      * @param  int  $maxConnections
      * @param  bool  $enableStats
+     * @param  bool  $enableClientMessages
+     * @param  int  $maxBackendEventsPerMinute
+     * @param  int  $maxClientEventsPerMinute
+     * @param  int  $maxReadRequestsPerMinute
      * @return void
      */
     public function __construct(
@@ -57,13 +90,21 @@ class App implements Arrayable, Jsonable
         string $key,
         string $secret,
         int $maxConnections,
-        bool $enableStats
+        bool $enableStats,
+        bool $enableClientMessages,
+        int $maxBackendEventsPerMinute,
+        int $maxClientEventsPerMinute,
+        int $maxReadRequestsPerMinute
     ) {
         $this->id = $id;
         $this->key = $key;
         $this->secret = $secret;
         $this->maxConnections = $maxConnections;
         $this->enableStats = $enableStats;
+        $this->enableClientMessages = $enableClientMessages;
+        $this->maxBackendEventsPerMinute = $maxBackendEventsPerMinute;
+        $this->maxClientEventsPerMinute = $maxClientEventsPerMinute;
+        $this->maxReadRequestsPerMinute = $maxReadRequestsPerMinute;
     }
 
     /**
@@ -79,6 +120,10 @@ class App implements Arrayable, Jsonable
             'secret' => $this->secret,
             'maxConnections' => $this->maxConnections,
             'enableStats' => $this->enableStats,
+            'enableClientMessages' => $this->enableClientMessages,
+            'maxBackendEventsPerMinute' => $this->maxBackendEventsPerMinute,
+            'maxClientEventsPerMinute' => $this->maxClientEventsPerMinute,
+            'maxReadRequestsPerMinute' => $this->maxReadRequestsPerMinute,
         ];
     }
 
