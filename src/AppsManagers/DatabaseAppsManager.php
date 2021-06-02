@@ -55,7 +55,11 @@ class DatabaseAppsManager extends ArrayAppsManager
             $app->key,
             $app->secret,
             $app->max_connections,
-            $app->enable_stats
+            $app->enable_stats,
+            $app->enable_client_messages,
+            $app->max_backend_events_per_min,
+            $app->max_client_events_per_min,
+            $app->max_read_req_per_min
         );
     }
 }

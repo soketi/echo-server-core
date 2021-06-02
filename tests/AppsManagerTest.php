@@ -54,6 +54,10 @@ class AppsManagerTest extends TestCase
             'secret' => 'echo-app-secret',
             'max_connections' => 100,
             'enable_stats' => true,
+            'enable_client_messages' => true,
+            'max_backend_events_per_min' => -1,
+            'max_client_events_per_min' => -1,
+            'max_read_req_per_min' => -1,
         ]);
 
         $this->json('GET', route('echo-server.app.show', ['appId' => $app->id, 'token' => 'echo-app-token']))
@@ -65,6 +69,10 @@ class AppsManagerTest extends TestCase
                     'secret' => $app->secret,
                     'maxConnections' => $app->max_connections,
                     'enableStats' => $app->enable_stats,
+                    'enableClientMessages' => $app->enable_client_messages,
+                    'maxBackendEventsPerMinute' => $app->max_backend_events_per_min,
+                    'maxClientEventsPerMinute' => $app->max_client_events_per_min,
+                    'maxReadRequestsPerMinute' => $app->max_read_req_per_min,
                 ],
             ]);
 
@@ -77,6 +85,10 @@ class AppsManagerTest extends TestCase
                     'secret' => $app->secret,
                     'maxConnections' => $app->max_connections,
                     'enableStats' => $app->enable_stats,
+                    'enableClientMessages' => $app->enable_client_messages,
+                    'maxBackendEventsPerMinute' => $app->max_backend_events_per_min,
+                    'maxClientEventsPerMinute' => $app->max_client_events_per_min,
+                    'maxReadRequestsPerMinute' => $app->max_read_req_per_min,
                 ],
             ]);
 
