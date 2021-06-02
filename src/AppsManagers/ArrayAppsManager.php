@@ -57,7 +57,11 @@ class ArrayAppsManager implements AppsManager
             $app['key'],
             $app['secret'],
             $app['maxConnections'] ?? -1,
-            $app['enableStats'] ?? false
+            $app['enableStats'] ?? false,
+            $app['enable_client_messages'] ?? true,
+            $app['max_backend_events_per_min'] ?? -1,
+            $app['max_client_events_per_min'] ?? -1,
+            $app['max_read_req_per_min'] ?? -1
         );
     }
 }
